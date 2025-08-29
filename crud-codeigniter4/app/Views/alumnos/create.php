@@ -6,6 +6,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
 </head>
 <body>
+    <?= $this->include('Formulario/navbar') ?>
     <div class="container">
     <h4>Agregar Alumno</h4>
     <form method="post" action="<?= site_url('alumnos/store') ?>">
