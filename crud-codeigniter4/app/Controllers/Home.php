@@ -8,4 +8,10 @@ class Home extends BaseController
     {
         return view('welcome_message');
     }
+
+    public function menu(): string
+    {
+        return view('menu_principal');
+    }
 }
+

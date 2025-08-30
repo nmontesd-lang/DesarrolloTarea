@@ -9,7 +9,7 @@
     <?= $this->include('Formulario/navbar') ?>
     <div class="container">
     <h4>Agregar Alumno</h4>
-    <form method="post" action="<?= site_url('alumnos/store') ?>">
+    <form method="post" action="<?= base_url('alumnos/store') ?>">
         <div class="input-field">
             <input type="text" id="nombre" name="nombre" required>
             <label for="nombre">Nombre</label>

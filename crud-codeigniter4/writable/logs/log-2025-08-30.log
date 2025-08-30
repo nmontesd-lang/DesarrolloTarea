@@ -1,0 +1,293 @@
+ERROR - 2025-08-30 00:28:14 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Desarrollo_web\crud-codeigniter4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Desarrollo_web\crud-codeigniter4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'umg', 3306, '', 0)
+#1 C:\Desarrollo_web\crud-codeigniter4\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Desarrollo_web\crud-codeigniter4\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Desarrollo_web\crud-codeigniter4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Desarrollo_web\crud-codeigniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Desarrollo_web\crud-codeigniter4\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Desarrollo_web\crud-codeigniter4\app\Controllers\AlumnoController.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\Desarrollo_web\crud-codeigniter4\system\CodeIgniter.php(933): App\Controllers\AlumnoController->index()
+#8 C:\Desarrollo_web\crud-codeigniter4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+#9 C:\Desarrollo_web\crud-codeigniter4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Desarrollo_web\crud-codeigniter4\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Desarrollo_web\crud-codeigniter4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Desarrollo_web\crud-codeigniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Desarrollo_web\crud-codeigniter4\system\rewrite.php(44): require_once('C:\\Desarrollo_w...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Desarrollo_web\crud-codeigniter4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Desarrollo_web\crud-codeigniter4\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Desarrollo_web\crud-codeigniter4\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Desarrollo_web\crud-codeigniter4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Desarrollo_web\crud-codeigniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Desarrollo_web\crud-codeigniter4\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Desarrollo_web\crud-codeigniter4\app\Controllers\AlumnoController.php(23): CodeIgniter\BaseModel->findAll()
+#6 C:\Desarrollo_web\crud-codeigniter4\system\CodeIgniter.php(933): App\Controllers\AlumnoController->index()
+#7 C:\Desarrollo_web\crud-codeigniter4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+#8 C:\Desarrollo_web\crud-codeigniter4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Desarrollo_web\crud-codeigniter4\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\Desarrollo_web\crud-codeigniter4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Desarrollo_web\crud-codeigniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Desarrollo_web\crud-codeigniter4\system\rewrite.php(44): require_once('C:\\Desarrollo_w...')
+#13 {main}
+CRITICAL - 2025-08-30 00:28:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+[Method: GET, Route: alumnos]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `alumnos`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\AlumnoController.php(23): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AlumnoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Desarrollo_web\\crud-codeigniter4\\public\\index.php')
+ERROR - 2025-08-30 01:28:16 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Desarrollo_web\crud-codeigniter4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Desarrollo_web\crud-codeigniter4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'umg', 3306, '', 0)
+#1 C:\Desarrollo_web\crud-codeigniter4\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Desarrollo_web\crud-codeigniter4\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Desarrollo_web\crud-codeigniter4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Desarrollo_web\crud-codeigniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Desarrollo_web\crud-codeigniter4\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Desarrollo_web\crud-codeigniter4\app\Controllers\AlumnoController.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\Desarrollo_web\crud-codeigniter4\system\CodeIgniter.php(933): App\Controllers\AlumnoController->index()
+#8 C:\Desarrollo_web\crud-codeigniter4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+#9 C:\Desarrollo_web\crud-codeigniter4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Desarrollo_web\crud-codeigniter4\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Desarrollo_web\crud-codeigniter4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Desarrollo_web\crud-codeigniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Desarrollo_web\crud-codeigniter4\system\rewrite.php(44): require_once('C:\\Desarrollo_w...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Desarrollo_web\crud-codeigniter4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Desarrollo_web\crud-codeigniter4\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Desarrollo_web\crud-codeigniter4\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Desarrollo_web\crud-codeigniter4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Desarrollo_web\crud-codeigniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Desarrollo_web\crud-codeigniter4\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Desarrollo_web\crud-codeigniter4\app\Controllers\AlumnoController.php(23): CodeIgniter\BaseModel->findAll()
+#6 C:\Desarrollo_web\crud-codeigniter4\system\CodeIgniter.php(933): App\Controllers\AlumnoController->index()
+#7 C:\Desarrollo_web\crud-codeigniter4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+#8 C:\Desarrollo_web\crud-codeigniter4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Desarrollo_web\crud-codeigniter4\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\Desarrollo_web\crud-codeigniter4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Desarrollo_web\crud-codeigniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Desarrollo_web\crud-codeigniter4\system\rewrite.php(44): require_once('C:\\Desarrollo_w...')
+#13 {main}
+CRITICAL - 2025-08-30 01:28:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+[Method: GET, Route: alumnos]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `alumnos`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\AlumnoController.php(23): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AlumnoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Desarrollo_web\\crud-codeigniter4\\public\\index.php')
+CRITICAL - 2025-08-30 02:57:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "cursos/crear.php"
+[Method: GET, Route: cursos/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cursos/crear.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('cursos/crear', [], true)
+ 3 APPPATH\Controllers\CursoController.php(27): view('cursos/crear', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CursoController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Desarrollo_web\\crud-codeigniter4\\public\\index.php')
+CRITICAL - 2025-08-30 02:58:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "cursos/crear.php"
+[Method: GET, Route: cursos/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cursos/crear.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('cursos/crear', [], true)
+ 3 APPPATH\Controllers\CursoController.php(27): view('cursos/crear', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CursoController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Desarrollo_web\\crud-codeigniter4\\public\\index.php')
+CRITICAL - 2025-08-30 03:01:31 --> ErrorException: Undefined variable $cursos
+[Method: GET, Route: cursos/create]
+in APPPATH\Views\cursos\create.php on line 10.
+ 1 APPPATH\Views\cursos\create.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\Desarrollo_web\\crud-codeigniter4\\app\\Views\\cursos\\create.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Desarrollo_web\\crud-codeigniter4\\app\\Views\\cursos\\create.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('cursos/create', [], true)
+ 5 APPPATH\Controllers\CursoController.php(27): view('cursos/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CursoController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Desarrollo_web\\crud-codeigniter4\\public\\index.php')
+CRITICAL - 2025-08-30 03:01:33 --> ErrorException: Undefined variable $cursos
+[Method: GET, Route: cursos/create]
+in APPPATH\Views\cursos\create.php on line 10.
+ 1 APPPATH\Views\cursos\create.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\Desarrollo_web\\crud-codeigniter4\\app\\Views\\cursos\\create.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Desarrollo_web\\crud-codeigniter4\\app\\Views\\cursos\\create.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('cursos/create', [], true)
+ 5 APPPATH\Controllers\CursoController.php(27): view('cursos/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CursoController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Desarrollo_web\\crud-codeigniter4\\public\\index.php')
+CRITICAL - 2025-08-30 03:01:35 --> ErrorException: Undefined variable $cursos
+[Method: GET, Route: cursos/create]
+in APPPATH\Views\cursos\create.php on line 10.
+ 1 APPPATH\Views\cursos\create.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\Desarrollo_web\\crud-codeigniter4\\app\\Views\\cursos\\create.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Desarrollo_web\\crud-codeigniter4\\app\\Views\\cursos\\create.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('cursos/create', [], true)
+ 5 APPPATH\Controllers\CursoController.php(27): view('cursos/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CursoController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Desarrollo_web\\crud-codeigniter4\\public\\index.php')
+CRITICAL - 2025-08-30 03:02:42 --> ErrorException: Undefined variable $cursos
+[Method: GET, Route: cursos/create]
+in APPPATH\Views\cursos\create.php on line 10.
+ 1 APPPATH\Views\cursos\create.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\Desarrollo_web\\crud-codeigniter4\\app\\Views\\cursos\\create.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Desarrollo_web\\crud-codeigniter4\\app\\Views\\cursos\\create.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('cursos/create', [], true)
+ 5 APPPATH\Controllers\CursoController.php(27): view('cursos/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CursoController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Desarrollo_web\\crud-codeigniter4\\public\\index.php')
+CRITICAL - 2025-08-30 03:02:43 --> ErrorException: Undefined variable $cursos
+[Method: GET, Route: cursos/create]
+in APPPATH\Views\cursos\create.php on line 10.
+ 1 APPPATH\Views\cursos\create.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\Desarrollo_web\\crud-codeigniter4\\app\\Views\\cursos\\create.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Desarrollo_web\\crud-codeigniter4\\app\\Views\\cursos\\create.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('cursos/create', [], true)
+ 5 APPPATH\Controllers\CursoController.php(27): view('cursos/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CursoController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Desarrollo_web\\crud-codeigniter4\\public\\index.php')
+CRITICAL - 2025-08-30 03:03:00 --> ErrorException: Undefined variable $cursos
+[Method: GET, Route: cursos/create]
+in APPPATH\Views\cursos\create.php on line 10.
+ 1 APPPATH\Views\cursos\create.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\Desarrollo_web\\crud-codeigniter4\\app\\Views\\cursos\\create.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Desarrollo_web\\crud-codeigniter4\\app\\Views\\cursos\\create.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('cursos/create', [], true)
+ 5 APPPATH\Controllers\CursoController.php(27): view('cursos/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CursoController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Desarrollo_web\\crud-codeigniter4\\public\\index.php')
+CRITICAL - 2025-08-30 03:06:06 --> ErrorException: Undefined variable $cursos
+[Method: GET, Route: cursos/create]
+in APPPATH\Views\cursos\create.php on line 10.
+ 1 APPPATH\Views\cursos\create.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\Desarrollo_web\\crud-codeigniter4\\app\\Views\\cursos\\create.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Desarrollo_web\\crud-codeigniter4\\app\\Views\\cursos\\create.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('cursos/create', [], true)
+ 5 APPPATH\Controllers\CursoController.php(27): view('cursos/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CursoController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Desarrollo_web\\crud-codeigniter4\\public\\index.php')
+CRITICAL - 2025-08-30 03:06:07 --> ErrorException: Undefined variable $cursos
+[Method: GET, Route: cursos/create]
+in APPPATH\Views\cursos\create.php on line 10.
+ 1 APPPATH\Views\cursos\create.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\Desarrollo_web\\crud-codeigniter4\\app\\Views\\cursos\\create.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Desarrollo_web\\crud-codeigniter4\\app\\Views\\cursos\\create.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('cursos/create', [], true)
+ 5 APPPATH\Controllers\CursoController.php(27): view('cursos/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CursoController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Desarrollo_web\\crud-codeigniter4\\public\\index.php')
+CRITICAL - 2025-08-30 03:06:10 --> ErrorException: Undefined variable $cursos
+[Method: GET, Route: cursos/create]
+in APPPATH\Views\cursos\create.php on line 10.
+ 1 APPPATH\Views\cursos\create.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\Desarrollo_web\\crud-codeigniter4\\app\\Views\\cursos\\create.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Desarrollo_web\\crud-codeigniter4\\app\\Views\\cursos\\create.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('cursos/create', [], true)
+ 5 APPPATH\Controllers\CursoController.php(27): view('cursos/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CursoController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Desarrollo_web\\crud-codeigniter4\\public\\index.php')
+CRITICAL - 2025-08-30 03:06:38 --> ErrorException: Undefined variable $cursos
+[Method: GET, Route: cursos/create]
+in APPPATH\Views\cursos\create.php on line 10.
+ 1 APPPATH\Views\cursos\create.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\Desarrollo_web\\crud-codeigniter4\\app\\Views\\cursos\\create.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Desarrollo_web\\crud-codeigniter4\\app\\Views\\cursos\\create.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('cursos/create', [], true)
+ 5 APPPATH\Controllers\CursoController.php(27): view('cursos/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CursoController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Desarrollo_web\\crud-codeigniter4\\public\\index.php')
+CRITICAL - 2025-08-30 03:13:15 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: cursos/edit/1]
+in APPPATH\Views\cursos\edit.php on line 2.
+ 1 APPPATH\Views\cursos\edit.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Desarrollo_web\\crud-codeigniter4\\app\\Views\\cursos\\edit.php', 2)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Desarrollo_web\\crud-codeigniter4\\app\\Views\\cursos\\edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('cursos/edit', [], true)
+ 5 APPPATH\Controllers\CursoController.php(44): view('cursos/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CursoController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Desarrollo_web\\crud-codeigniter4\\public\\index.php')

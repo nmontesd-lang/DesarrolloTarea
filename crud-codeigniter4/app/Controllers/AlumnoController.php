@@ -6,7 +6,7 @@ use App\Models\AlumnoModel;
 use App\Models\CursoModel;
 use CodeIgniter\Controller;
 
-class AlumnoController extends Controller
+class AlumnoController extends BaseController
 {
     protected $alumnoModel;
     protected $cursoModel;
@@ -31,7 +31,7 @@ class AlumnoController extends Controller
     {
         return view('alumnos/create');
     }
-
+  
     // 📌 Guardar alumno nuevo
     public function store()
     {

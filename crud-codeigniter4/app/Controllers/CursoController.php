@@ -24,14 +24,14 @@ class CursoController extends Controller
     public function create()
     {
         $data['titulo'] = "Crear Curso";
-        return view('cursos/crear', $data);
+        return view('cursos/create', $data);
     }
 
     public function store()
     {
         $this->cursoModel->save([
             'nombre' => $this->request->getPost('nombre'),
-            'descripcion' => $this->request->getPost('descripcion')
+            'profesor' => $this->request->getPost('profesor')
         ]);
 
         return redirect()->to('/cursos');
@@ -48,7 +48,7 @@ class CursoController extends Controller
     {
         $this->cursoModel->update($id, [
             'nombre' => $this->request->getPost('nombre'),
-            'descripcion' => $this->request->getPost('descripcion')
+            'profesor' => $this->request->getPost('profesor')
         ]);
 
         return redirect()->to('/cursos');

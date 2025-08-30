@@ -1,10 +1,9 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Gestión Escolar</a>
-  <div class="collapse navbar-collapse">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item"><a class="nav-link" href="/alumnos">Alumnos</a></li>
-      <li class="nav-item"><a class="nav-link" href="/cursos">Cursos</a></li>
+<nav class="blue">
+  <div class="nav-wrapper container">
+    <a href="/" class="brand-logo">Gestión</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li class="nav-item"><a class="nav-link" href="/alumnos">👨‍🎓 Alumnos</a></li>
+      <li class="nav-item"><a class="nav-link" href="/cursos">📘 Cursos</a></li>
     </ul>
   </div>
 </nav>
-
